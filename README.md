@@ -5,10 +5,13 @@ It’s a beautiful spring day, and it’s been two weeks since you were hired as
 I was asked to design tables to hold data in the CSVs (data modeling), import the CSVs into a SQL (Postgres) database(data engineering), and answer questions (d ata analysis).
 
 ## Data Modeling
+Entity Relationship Diagram (ERD) for Previous Employee Database
+<img width="830" alt="PewlettHackardERD" src="https://user-images.githubusercontent.com/75756974/184274150-d4b1a374-db77-49a9-9f82-b223576be5a9.png">
+
 
 ## Data Engineering
 
-This assignment is divided into three parts: data modeling, data engineering, and data analysis. 
 
-####Data Analysis
+
+## Data Analysis
 
