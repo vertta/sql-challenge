@@ -10,6 +10,7 @@ drop table if exists dept_manager cascade;
 drop table if exists salaries cascade;
 
 -- Create tables for each CSV file 
+
 CREATE TABLE "titles" (
     "title_id" varchar(255)   NOT NULL,
     "title" varchar(255)   NOT NULL,
@@ -32,7 +33,7 @@ CREATE TABLE "employees" (
 );
 
 CREATE TABLE "departments" (
-    "dept_no" int   NOT NULL,
+    "dept_no" varchar(255)   NOT NULL,
     "dept_name" varchar(255)   NOT NULL,
     CONSTRAINT "pk_departments" PRIMARY KEY (
         "dept_no"
@@ -41,14 +42,14 @@ CREATE TABLE "departments" (
 
 CREATE TABLE "dept_emp" (
     "emp_no" int   NOT NULL,
-    "dept_no" int   NOT NULL,
-    primary key (emp_no,dept_no)
+    "dept_no" varchar(255)   NOT NULL,
+    primary key (emp_no,dept_no)  
 );
 
 CREATE TABLE "dept_manager" (
-    "dept_no" int   NOT NULL,
+    "dept_no" varchar(255)   NOT NULL,
     "emp_no" int   NOT NULL,
-    primary key(dept_no, emp_no)
+    primary key(dept_no, emp_no)   
 );
 
 CREATE TABLE "salaries" (
@@ -63,9 +64,6 @@ ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_dept_no" FOREIGN KEY("dept_no")
-REFERENCES "departments" ("dept_no");
-
-ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_dept_no" FOREIGN KEY("dept_no")
 REFERENCES "departments" ("dept_no");
 
 ALTER TABLE "dept_manager" ADD CONSTRAINT "fk_dept_manager_emp_no" FOREIGN KEY("emp_no")
