@@ -10,11 +10,14 @@ Entity Relationship Diagram (ERD) for Previous Employee Database
 
 
 ## Data Engineering
+Created a reusable process for people that may want to load data locally for analysis. I created database and imported files using PSQL process 
+
+Create Datanase using PSQL Utilities
+![create_hr_db_and_tables_psql](https://user-images.githubusercontent.com/75756974/184806066-d5180f55-d72c-403c-b7a6-97c9509add9e.gif)
 
 Imported table data from CSV files into postgres using PSQL Utility.   This is a faster way to import besides using the GUI
 
-<img width="879" alt="image" src="https://user-images.githubusercontent.com/75756974/184796691-ecdcdd88-8bcb-4385-9841-5e8696d1da03.png">
-
+![load_hr_tables_psql](https://user-images.githubusercontent.com/75756974/184806856-cf49f407-ad3b-40df-930d-d60c2db7fe2b.gif)
 
 ## Data Analysis
 
