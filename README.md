@@ -11,6 +11,9 @@ Entity Relationship Diagram (ERD) for Previous Employee Database
 
 ## Data Engineering
 
+Imported table data from CSV files into postgres using PSQL Utility.   This is a faster way to import besides using the GUI
+
+<img width="879" alt="image" src="https://user-images.githubusercontent.com/75756974/184796691-ecdcdd88-8bcb-4385-9841-5e8696d1da03.png">
 
 
 ## Data Analysis
