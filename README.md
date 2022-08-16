@@ -6,7 +6,7 @@ I was asked to design tables to hold data in the CSVs (data modeling), import th
 
 ## Data Modeling
 Entity Relationship Diagram (ERD) for Previous Employee Database
-<img width="830" alt="PewlettHackardERD" src="https://user-images.githubusercontent.com/75756974/184274150-d4b1a374-db77-49a9-9f82-b223576be5a9.png">
+<img width="536" alt="image" src="https://user-images.githubusercontent.com/75756974/184804870-98cf2224-b35b-42c0-bf87-6d04de5aeaf1.png">
 
 
 ## Data Engineering
