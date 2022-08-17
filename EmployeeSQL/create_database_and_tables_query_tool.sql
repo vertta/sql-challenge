@@ -1,15 +1,8 @@
 -- drop tables if exist, and recreate tables
---Note:  If this script is used data will need to be reimported
---To reimport data use import wizard or reimport data script
+--Note:  If this script is used data will need to be reimported using the import/export utility
 
 
-
-DROP DATABASE IF EXISTS "HR";
-
-
-CREATE DATABASE "HR";
-
-
+ 
 drop table if exists titles cascade;
 drop table if exists employees cascade;
 drop table if exists departments cascade;
@@ -26,7 +19,7 @@ CREATE TABLE "titles" (
 );
 CREATE TABLE "employees" (
     "emp_no" int   NOT NULL,
-    "emp_title_id" varchar(100)   NOT NULL,
+    "title_id" varchar(100)   NOT NULL,
     "birth_date" date   NOT NULL,
     "first_name" varchar(50)   NOT NULL,
     "last_name" varchar(50)   NOT NULL,
@@ -63,7 +56,7 @@ CREATE TABLE "salaries" (
     "salary" money   NOT NULL
 );
 
-ALTER TABLE "employees" ADD CONSTRAINT "fk_employees_emp_title_id" FOREIGN KEY("emp_title_id")
+ALTER TABLE "employees" ADD CONSTRAINT "fk_employees_title_id" FOREIGN KEY("title_id")
 REFERENCES "titles" ("title_id");
 
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
