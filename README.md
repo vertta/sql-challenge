@@ -19,7 +19,7 @@ Imported table data from CSV files into postgres using PSQL Utility.   This is a
 
 ![load_hr_tables_psql](https://user-images.githubusercontent.com/75756974/184806856-cf49f407-ad3b-40df-930d-d60c2db7fe2b.gif)
 
-Script Repository 
+### Script Repository  [Click Here](https://github.com/vertta/sql-challenge/tree/main/EmployeeSQL)
 
 ## Data Analysis
 The data was analyzed using eight queries based on required questions some of the results are listed below.
