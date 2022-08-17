@@ -22,6 +22,26 @@ Imported table data from CSV files into postgres using PSQL Utility.   This is a
 Script Repository 
 
 ## Data Analysis
+The data was analyzed using eight queries based on required questions some of the results are listed below.
 
+List first name, last name, and hire date for employees who were hired in 1986. 
+<img width="319" alt="image" src="https://user-images.githubusercontent.com/75756974/185028472-b89d9cad-8aab-4505-86c6-a4ab841f7323.png">
 
+List the manager of each department with the following information:  department number, department name, the manager's employee number, last name, first name.
+<img width="326" alt="image" src="https://user-images.githubusercontent.com/75756974/185028309-43084d37-7657-4acf-977f-e8951f0fcb4c.png">
+
+List the frequency count of employee last names (i.e., how many employees share each last name) in descending order.
+<img width="203" alt="image" src="https://user-images.githubusercontent.com/75756974/185028698-825528cc-3534-412a-bca5-befb353d889b.png">
+
+## Bonus
+As a bonus I was asked the following questions: 
+Create a histogram to visualize the most common salary ranges for employees.
+
+<img width="249" alt="image" src="https://user-images.githubusercontent.com/75756974/185027590-3583d054-452b-4a9b-a206-3e694285c1ad.png">
+
+As you can see from the charting $44, 000 - $68,000 was the most common salary range employees
+
+I was also asked to chart the average salary per title 
+
+<img width="293" alt="image" src="https://user-images.githubusercontent.com/75756974/185027713-74beb23b-9056-4a67-a869-dd3f418e235b.png">
 
